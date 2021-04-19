@@ -107,6 +107,7 @@ header > nav .register {
     justify-self: right;
     align-self: center;
     padding-right: 20px;
+    font-weight: bold;
 }
 
 /* Placement des blocs main*/
@@ -133,6 +134,10 @@ header > nav .register {
 
 .focusform header {
     margin-bottom: 20px;
+}
+
+.focusform h1 {
+    font-weight: bold;
 }
 
 .focusform header p {
@@ -179,6 +184,13 @@ header > nav .register {
     margin: 5px 0px 0px 5px;
 }
 
+.focusform button i {
+    padding: 10px;
+}
+
+.focusform button {
+    padding-right: 10px;
+}
 /*placement du footer*/
 
 h3 {
@@ -219,6 +231,12 @@ footer nav {
 .accomodation .carda {
     margin-bottom: 20px;
     border: 3px solid black;
+}
+
+.accomodation a h2,
+.accomodation p,
+.accomodation .stars {
+    padding-left: 20px;
 }
 
 /*section mostused*/
@@ -278,31 +296,6 @@ figure {
     width: 40%;
     object-fit: cover;
 }
-
-/*
-figure {
-    display: grid;
-    margin-bottom: 10px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "img figcaption"
-        "img figcaption"
-        "img figcaption";
-}
-
-.fame1 {
-    grid-area: img figcaption;
-}
-
-.fame2 {
-    grid-area: img figcaption;
-}
-
-.fame3 {
-    grid-area: img figcaption;
-}
-*/
 
 /*activity*/
 aside {
