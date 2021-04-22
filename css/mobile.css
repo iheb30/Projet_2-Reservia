@@ -31,8 +31,12 @@ footer nav {
     font-size: 1.7rem;
 }
 
-p {
+.focusform {
     font-size: 1.7rem;
+}
+
+.focusform p > i {
+    font-size: 1.3rem;
 }
 
 label,
@@ -42,23 +46,18 @@ button {
     font-weight: bold;
 }
 
-.focusform p i {
-    border: 1px solid grey;
-    padding: 5px 10px 5px 10px;
-    border-radius: 100%;
-}
-
 .mostused header i {
     font-size: 2.4rem;
 }
 .mostused figure i {
     font-size: 1rem;
 }
+
 .accomodation i {
     font-size: 1rem;
 }
 
-.accomodation .cardb {
+.accomodation .cardg {
     font-size: 1.9rem;
     font-weight: bold;
 }
@@ -90,16 +89,18 @@ header > nav {
         "accomodations activities";
 }
 
-header > nav .accomodations {
+header > nav .acco {
     grid-area: accomodations;
     justify-self: center;
     align-self: center;
+    color: black;
 }
 
 header > nav .activities {
     grid-area: activities;
     justify-self: center;
     align-self: center;
+    color: black;
 }
 
 header > nav .register {
@@ -108,6 +109,7 @@ header > nav .register {
     align-self: center;
     padding-right: 20px;
     font-weight: bold;
+    color: rgb(46, 109, 247);
 }
 
 /* Placement des blocs main*/
@@ -141,16 +143,25 @@ header > nav .register {
 }
 
 .focusform header p {
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .barre {
     width: 40px;
     height: 40px;
+    background-color: blue;
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+}
+
+.barre i {
+    color: white;
 }
 
 .focusform input {
     width: calc(100% - 80px);
+    position: relative;
 }
 
 .focusform label {
@@ -158,6 +169,10 @@ header > nav .register {
     height: 40px;
     line-height: 40px;
     text-align: center;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(243, 243, 243);
 }
 
 .search {
@@ -165,41 +180,47 @@ header > nav .register {
 }
 
 .focusform h2 {
-    padding-top: 35px;
-    padding-bottom: 15px;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
-.economique {
-    margin: 0px 5px 5px 0px;
-}
-.child {
-    margin: 0px 0px 5px 5px;
-}
-
-.heart {
-    margin: 5px 5px 0px 0px;
+.btn-filter {
+    margin: 0px 10px 10px 0px;
+    border-radius: 20px;
+    background: white;
 }
 
-.animal {
-    margin: 5px 0px 0px 5px;
+.btn-filter i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-right: 1px solid rgb(209, 226, 245);
+    border-radius: 100%;
+    color: blue;
+    background: rgb(209, 226, 245);
 }
 
-.focusform button i {
-    padding: 10px;
+.btn-filter span {
+    padding: 0 20px;
 }
 
-.focusform button {
-    padding-right: 10px;
+.focusform p i {
+    border: 1px solid grey;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 100%;
+    color: blue;
 }
-/*placement du footer*/
 
-h3 {
-    padding: 20px 0px 0px 20px;
+.focusform p {
+    display: flex;
+    margin: 20px 0px 20px 0px;
 }
 
-footer nav {
-    line-height: 3.2rem;
-    padding-left: 20px;
+.focusform p span {
+    width: calc(100% - 25px);
 }
 
 /*section accomodation */
@@ -215,33 +236,57 @@ footer nav {
 
 /*grid section */
 .accomodation {
+    padding: 40px 20px;
     display: grid;
-    padding: 20px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(6, 240px);
+    grid-template-areas: "h2" "figcaption2" "figcaption3" "figcaption4" "figcaption5" "figcaption6" "figcaption7";
+}
+
+.cardz {
+    grid-area: h2;
+}
+
+.carda {
+    grid-area: figcaption2;
+}
+.cardb {
+    grid-area: figcaption3;
+}
+.cardc {
+    grid-area: figcaption4;
+}
+
+.cardd {
+    grid-area: figcaption5;
+}
+
+.carde {
+    grid-area: figcaption6;
+}
+
+.cardf {
+    grid-area: figcaption7;
 }
 
 .accomodation img {
-    height: 120px;
+    height: calc(100% - 100px);
     object-fit: cover;
 }
 
-.accomodation header {
-    margin-bottom: 30px;
+.accomodation figure {
+    border: 1px solid black;
+    height: 100%;
 }
 
-.accomodation .carda {
-    margin-bottom: 20px;
-    border: 3px solid black;
-}
-
-.accomodation a h2,
-.accomodation p,
-.accomodation .stars {
-    padding-left: 20px;
+.accomodation figcaption {
+    padding: 10px 15px;
 }
 
 /*section mostused*/
 
-figure {
+.mostused figure {
     display: flex;
 }
 
@@ -255,41 +300,47 @@ figure {
 }
 
 .mostused {
-    padding: 10px;
+    padding: 40px 20px;
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(3, 140px);
-    grid-gap: 20px;
     grid-template-areas:
         "header"
-        "fame1"
-        "fame2"
-        "fame3";
+        "figcaption"
+        "figcaption"
+        "figcaption";
 }
 
 .header {
     grid-area: header;
 }
 .fame1 {
-    grid-area: fame1;
+    grid-area: figcaption;
     height: 100%;
+    border: 1px solid black;
 }
 
 .fame2 {
-    grid-area: fame2;
+    grid-area: figcaption;
     height: 100%;
+    border: 1px solid black;
 }
 .fame3 {
-    grid-area: fame3;
+    grid-area: figcaption;
     height: 100%;
+    border: 1px solid black;
 }
 
 .mostused figcaption {
     padding: 15px;
+    position: relative;
+    width: 60%;
 }
 
-.mostused figcaption p {
-    margin-bottom: 20px;
+.mstars {
+    position: absolute;
+    bottom: 15px;
 }
 
 .mostused img {
@@ -299,62 +350,105 @@ figure {
 
 /*activity*/
 aside {
+    padding: 40px 20px;
     display: grid;
-    padding: 20px;
+    grid-gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(6, 210px);
+    grid-template-rows: auto repeat(6, 230px);
     grid-template-areas:
-        "card0"
-        "card1"
-        "card2"
-        "card3"
-        "card4"
-        "card5"
-        "card6";
+        "h1"
+        "figcaption1"
+        "figcaption2"
+        "figcaption3"
+        "figcaption4"
+        "figcaption5"
+        "figcaption6";
 }
 
 .card0 {
-    grid-area: card0;
-    margin-bottom: 20px;
+    grid-area: h1;
 }
 
 .port {
-    grid-area: card1;
+    grid-area: figcaption1;
 }
 
 .pomegues {
-    grid-area: card2;
+    grid-area: figcaption2;
 }
 
 .isle {
-    grid-area: card3;
+    grid-area: figcaption3;
 }
 
 .park {
-    grid-area: card4;
+    grid-area: figcaption4;
 }
 
 .garde {
-    grid-area: card5;
+    grid-area: figcaption5;
 }
 
 .longchamp {
-    grid-area: card6;
+    grid-area: figcaption6;
 }
 
-aside img {
-    height: 120px;
+.activity img {
+    height: calc(100% - 70px);
     object-fit: cover;
 }
 
-.activity h2 {
-    margin-top: 10px;
-    margin-left: 20px;
+.activity figure {
+    height: 100%;
+    border: 1px solid black;
 }
 
-aside a {
-    border: 1px solid black;
-    margin-bottom: 30px;
+.activity figcaption {
+    padding: 20px;
+}
+
+/* footer */
+
+footer {
+    padding: 40px 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 65px auto 40px auto 40px;
+    grid-template-areas:
+        "h31"
+        "nav1"
+        "h32"
+        "nav2"
+        "h33"
+        "nav3";
+}
+
+.fabout {
+    grid-area: h31;
+}
+
+.about {
+    grid-area: nav1;
+}
+
+.facom {
+    grid-area: h32;
+}
+
+.acom {
+    grid-area: nav2;
+}
+
+.fassi {
+    grid-area: h33;
+}
+
+.assi {
+    grid-area: nav3;
+}
+
+footer h3 {
 }
 
 /*
