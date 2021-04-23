@@ -21,10 +21,21 @@ h1 {
 h2,
 h3 {
     font-size: 1.9rem;
+    color: black;
+}
+.mostused p {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.accomodation p {
+    font-size: 1.6rem;
+    color: black;
 }
 
 footer nav {
     font-size: 1.5rem;
+    color: black;
 }
 
 .focusform header p {
@@ -60,9 +71,13 @@ button {
 .accomodation .cardg {
     font-size: 1.9rem;
     font-weight: bold;
+    color: black;
 }
 
 /*Taille interligne*/
+.mostused h2 {
+    line-height: 2rem;
+}
 
 main h1 {
     line-height: 2.6rem;
@@ -93,7 +108,9 @@ header > nav .acco {
     grid-area: accomodations;
     justify-self: center;
     align-self: center;
-    color: black;
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+    padding: 0px 50px 0px 50px;
 }
 
 header > nav .activities {
@@ -101,6 +118,8 @@ header > nav .activities {
     justify-self: center;
     align-self: center;
     color: black;
+    border-bottom: 3px solid #f2f2f2;
+    padding: 0px 50px 0px 50px;
 }
 
 header > nav .register {
@@ -109,7 +128,7 @@ header > nav .register {
     align-self: center;
     padding-right: 20px;
     font-weight: bold;
-    color: rgb(46, 109, 247);
+    color: #0065fc;
 }
 
 /* Placement des blocs main*/
@@ -149,8 +168,9 @@ header > nav .register {
 .barre {
     width: 40px;
     height: 40px;
-    background-color: blue;
+    background-color: #0065fc;
     border-radius: 10px;
+    border: #0065fc;
     position: absolute;
     right: 30px;
 }
@@ -162,6 +182,7 @@ header > nav .register {
 .focusform input {
     width: calc(100% - 80px);
     position: relative;
+    border: 2px solid #f2f2f2;
 }
 
 .focusform label {
@@ -169,10 +190,10 @@ header > nav .register {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #f2f2f2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: rgb(243, 243, 243);
+    background-color: #f2f2f2;
 }
 
 .search {
@@ -194,10 +215,10 @@ header > nav .register {
     height: 40px;
     width: 40px;
     line-height: 40px;
-    border-right: 1px solid rgb(209, 226, 245);
+    border-right: 1px solid #deebff;
     border-radius: 100%;
-    color: blue;
-    background: rgb(209, 226, 245);
+    color: #0065fc;
+    background: #deebff;
 }
 
 .btn-filter span {
@@ -205,13 +226,13 @@ header > nav .register {
 }
 
 .focusform p i {
-    border: 1px solid grey;
+    border: 1px solid #f2f2f2;
     height: 25px;
     width: 25px;
     line-height: 25px;
     text-align: center;
     border-radius: 100%;
-    color: blue;
+    color: #0065fc;
 }
 
 .focusform p {
@@ -236,6 +257,7 @@ header > nav .register {
 
 /*grid section */
 .accomodation {
+    background-color: #fcfcfcf8;
     padding: 40px 20px;
     display: grid;
     grid-gap: 20px;
@@ -273,10 +295,15 @@ header > nav .register {
 .accomodation img {
     height: calc(100% - 100px);
     object-fit: cover;
+    padding: 3px 3px 0px 3px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .accomodation figure {
-    border: 1px solid black;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
     height: 100%;
 }
 
@@ -300,6 +327,7 @@ header > nav .register {
 }
 
 .mostused {
+    background-color: #f2f2f2;
     padding: 40px 20px;
     display: grid;
     grid-gap: 20px;
@@ -318,18 +346,25 @@ header > nav .register {
 .fame1 {
     grid-area: figcaption;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 .fame2 {
     grid-area: figcaption;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 .fame3 {
     grid-area: figcaption;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.mostused figure {
+    background-color: white;
 }
 
 .mostused figcaption {
@@ -346,10 +381,14 @@ header > nav .register {
 .mostused img {
     width: 40%;
     object-fit: cover;
+    padding: 3px 0px 3px 3px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 /*activity*/
 aside {
+    background-color: #fcfcfcf8;
     padding: 40px 20px;
     display: grid;
     grid-gap: 20px;
@@ -394,13 +433,17 @@ aside {
 }
 
 .activity img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     height: calc(100% - 70px);
     object-fit: cover;
 }
 
 .activity figure {
+    border-radius: 20px;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid #fcfcfcf8;
+    background-color: white;
 }
 
 .activity figcaption {
@@ -410,6 +453,7 @@ aside {
 /* footer */
 
 footer {
+    background-color: #f2f2f2;
     padding: 40px 20px;
     display: grid;
     grid-gap: 20px;
@@ -448,7 +492,14 @@ footer {
     grid-area: nav3;
 }
 
-footer h3 {
+footer li a {
+    color: black;
+}
+
+/*hover part*/
+
+:hover .btn-filter {
+    background-color: #deebff;
 }
 
 /*
