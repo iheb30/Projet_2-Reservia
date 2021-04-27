@@ -106,20 +106,22 @@ header > nav {
 
 header > nav .acco {
     grid-area: accomodations;
-    justify-self: center;
-    align-self: center;
     color: #0065fc;
     border-bottom: 3px solid #0065fc;
-    padding: 0px 50px 0px 50px;
+    display: block;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
 }
 
 header > nav .activities {
     grid-area: activities;
-    justify-self: center;
-    align-self: center;
     color: black;
     border-bottom: 3px solid #f2f2f2;
-    padding: 0px 50px 0px 50px;
+    display: block;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
 }
 
 header > nav .register {
@@ -135,6 +137,7 @@ header > nav .register {
 
 .searchbarre {
     display: flex;
+    margin-bottom: 35px;
 }
 
 .main {
@@ -171,8 +174,7 @@ header > nav .register {
     background-color: #0065fc;
     border-radius: 10px;
     border: #0065fc;
-    position: absolute;
-    right: 30px;
+    margin-left: -10px;
 }
 
 .barre i {
@@ -180,9 +182,13 @@ header > nav .register {
 }
 
 .focusform input {
-    width: calc(100% - 80px);
-    position: relative;
+    width: calc(100% - 70px);
     border: 2px solid #f2f2f2;
+    padding: 0 10px;
+}
+
+.horizon {
+    display: ;
 }
 
 .focusform label {
@@ -191,9 +197,8 @@ header > nav .register {
     line-height: 40px;
     text-align: center;
     border: 1px solid #f2f2f2;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     background-color: #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .search {
@@ -207,18 +212,20 @@ header > nav .register {
 
 .btn-filter {
     margin: 0px 10px 10px 0px;
+    border: 2px solid silver;
     border-radius: 20px;
     background: white;
+    height: 40px;
 }
 
 .btn-filter i {
     height: 40px;
     width: 40px;
     line-height: 40px;
-    border-right: 1px solid #deebff;
-    border-radius: 100%;
+    border-radius: 50%;
     color: #0065fc;
     background: #deebff;
+    margin: -2px;
 }
 
 .btn-filter span {
@@ -226,12 +233,12 @@ header > nav .register {
 }
 
 .focusform p i {
-    border: 1px solid #f2f2f2;
-    height: 25px;
-    width: 25px;
-    line-height: 25px;
+    border: 1px solid silver;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
     text-align: center;
-    border-radius: 100%;
+    border-radius: 50%;
     color: #0065fc;
 }
 
@@ -241,7 +248,8 @@ header > nav .register {
 }
 
 .focusform p span {
-    width: calc(100% - 25px);
+    width: calc(100% - 30px);
+    padding-left: 10px;
 }
 
 /*section accomodation */
@@ -305,10 +313,18 @@ header > nav .register {
     background-color: white;
     border-radius: 20px;
     height: 100%;
+    box-shadow: 0px 5px 15px silver;
 }
 
 .accomodation figcaption {
     padding: 10px 15px;
+    position: relative;
+    height: 100px;
+}
+
+.accomodation .stars {
+    position: absolute;
+    bottom: 10px;
 }
 
 /*section mostused*/
@@ -365,6 +381,7 @@ header > nav .register {
 
 .mostused figure {
     background-color: white;
+    box-shadow: 0px 5px 15px silver;
 }
 
 .mostused figcaption {
@@ -382,8 +399,7 @@ header > nav .register {
     width: 40%;
     object-fit: cover;
     padding: 3px 0px 3px 3px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 /*activity*/
@@ -442,8 +458,8 @@ aside {
 .activity figure {
     border-radius: 20px;
     height: 100%;
-    border: 1px solid #fcfcfcf8;
     background-color: white;
+    box-shadow: 0px 5px 15px silver;
 }
 
 .activity figcaption {

@@ -1,24 +1,269 @@
-header .nav {
+/*header*/
+header > .nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header > .nav .acco {
+    border-bottom: none;
+    display: flex;
+    width: 12%;
+}
+
+header > .nav .activities {
+    border-bottom: none;
+    display: flex;
+    grid-area: none;
+    width: 8%;
+}
+header > .nav .register {
+    display: flex;
+    grid-area: none;
+    width: 8%;
+}
+
+/*focus*/
+
+h2 {
+    display: inline;
+}
+
+.focusform input {
+    width: calc(100% - 550px);
+}
+
+.barre i {
+    display: none;
+}
+
+.barre {
+    width: 90px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.search {
+    display: block;
+    color: white;
+}
+
+/*accomodation*/
+
+.horizon {
     display: flex;
 }
-.d {
-    display: grid;
+
+.accomodation {
+    margin: 0px 20px 0px 20px;
+    width: 66%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(2, 150px);
     grid-template-areas:
-        "economique child"
-        "heart animal";
+        "h2"
+        "figcaption2 figcaption3 figcaption4"
+        "figcaption5 figcaption6 figcaption7";
 }
-.economique {
-    grid-area: 1/1 / span 1 / span 1;
+
+.accomodation img {
+    height: calc(100% - 70px);
+    object-fit: cover;
+    padding: 3px 3px 0px 3px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
-.child {
-    grid-area: 1/2 / span 1 / span 1;
+
+.accomodation figure {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    height: 100%;
+    width: 140px;
+    box-shadow: 0px 5px 15px silver;
+    margin-right: 20px;
 }
-.heart {
-    grid-area: 2/1 / span 1 / span1;
+
+.accomodation figcaption {
+    padding: 10px 15px;
+    position: relative;
+    height: 100px;
 }
-.animal {
-    grid-area: 2/2 / span 1 / span 1;
+
+.accomodation .stars {
+    position: absolute;
+    bottom: 25px;
 }
-.child {
-    position: static;
+
+.mostused {
+    width: 33%;
+    border-radius: 20px;
+}
+
+:root {
+    font-size: 7px;
+}
+
+.mostused .fame1 {
+    height: 100%;
+}
+
+.mostused {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(2, 140px);
+    grid-template-areas:
+        "header"
+        "figcaption";
+}
+
+.horizon {
+    padding-right: 20px;
+}
+
+/*aside*/
+
+aside {
+    background-color: #fcfcfcf8;
+    padding: 40px 20px;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 330px;
+}
+
+.card0 {
+    grid-area: h1;
+    margin-bottom: 20px;
+}
+
+.port {
+    grid-area: figcaption1;
+    padding: 0px 10px 0px 0px;
+}
+
+.pomegues {
+    grid-area: figcaption2;
+    padding: 0px 10px 10px 10px;
+}
+
+.isle {
+    padding: 10px 10px 0px 10px;
+    grid-area: figcaption3;
+}
+
+.park {
+    padding: 0px 10px 0px 10px;
+    grid-area: figcaption4;
+}
+
+.garde {
+    padding: 0px 0px 10px 10px;
+    grid-area: figcaption5;
+}
+
+.longchamp {
+    padding: 10px 0px 0px 10px;
+    grid-area: figcaption6;
+}
+
+.act768 {
+    display: flex;
+}
+.act769 {
+    display: flex;
+    flex-direction: column;
+}
+
+.act770 {
+    display: flex;
+    flex-direction: column;
+}
+
+.isle img {
+    height: 110px;
+}
+
+.isle figcaption {
+    height: 50px;
+}
+
+.pomegues img {
+    height: 110px;
+}
+.pomegues figcaption {
+    height: 40px;
+}
+
+.port img {
+    height: 280px;
+}
+
+.port figcaption {
+    height: 40px;
+}
+
+.park img {
+    height: 280px;
+}
+.garde img {
+    height: 70px;
+}
+
+.garde figcaption {
+    height: 60px;
+}
+
+.longchamp img {
+    height: 130px;
+}
+
+.longchamp figcaption {
+    height: 50px;
+}
+
+.activity figcaption {
+    padding: 10px;
+}
+
+/*footer*/
+
+footer {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "h31 h32 h33"
+        "nav1 nav2 nav3";
+}
+
+.fabout {
+    grid-area: h31;
+}
+
+.about {
+    grid-area: nav1;
+    height: 20px;
+}
+
+.facom {
+    grid-area: h32;
+}
+
+.acom {
+    grid-area: nav2;
+    height: 20px;
+}
+
+.fassi {
+    grid-area: h33;
+}
+
+.assi {
+    grid-area: nav3;
+    height: 20px;
 }
