@@ -1,4 +1,207 @@
-/*header*/
+/******************************
+*SECTION NAV
+******************************/
+
+header > nav {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 60px;
+    grid-template-areas: ". accomodations activities register";
+}
+
+header > nav .acco {
+    border-top: 3px solid #0065fc;
+    border-bottom: none;
+}
+
+header > nav .activities {
+    padding-top: 3px;
+    border-bottom: none;
+}
+
+header > nav .register {
+    justify-self: center;
+    padding: 7px 0 0 0;
+}
+
+.focusform p i {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+}
+
+/******************************
+*SECTION MAIN
+******************************/
+.main {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 0.1fr 0.1fr 0.9fr;
+    grid-template-areas:
+        "focus focus"
+        "accomodation mostuses"
+        "aside aside";
+}
+.activity {
+    grid-area: aside;
+}
+.mostused {
+    grid-area: mostuses;
+}
+.accomodation {
+    grid-area: accomodation;
+}
+.focusform {
+    grid-area: focus;
+    padding: 20px;
+}
+
+/******************************
+*SECTION FOCUSFORM
+******************************/
+
+.focusform input {
+    width: 50%;
+}
+.barre i {
+    display: none;
+}
+.barre {
+    width: 110px;
+    border-radius: 0px 10px 10px 0px;
+}
+.search {
+    display: block;
+    color: white;
+}
+
+h2 {
+    display: inline;
+}
+
+/******************************
+*SECTION ACCOMODATION
+******************************/
+.accomodation {
+    background-color: #f2f2f2;
+    margin: 0 10px 0 20px;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px repeat(3, 120px) 20px;
+    grid-template-areas:
+        "h2 h2"
+        "figcaption2 figcaption3"
+        "figcaption4 figcaption5"
+        "figcaption6 figcaption7"
+        "figcaption8 figcaption8";
+}
+
+.cardz {
+    grid-area: h2;
+}
+
+.carda {
+    grid-area: figcaption2;
+}
+.cardb {
+    grid-area: figcaption3;
+}
+.cardc {
+    grid-area: figcaption4;
+}
+
+.cardd {
+    grid-area: figcaption5;
+}
+
+.carde {
+    grid-area: figcaption6;
+}
+
+.cardf {
+    grid-area: figcaption7;
+}
+.cardg {
+    grid-area: figcaption8;
+}
+
+.accomodation figure {
+    border-radius: 10px;
+    height: 100%;
+}
+
+.accomodation img {
+    height: calc(100% - 60px);
+    object-fit: cover;
+    padding: 1px 1px 0px 1px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.accomodation figcaption {
+    padding: 5px;
+    position: relative;
+    height: 100px;
+    line-height: 1rem;
+}
+
+.accomodation .stars {
+    position: absolute;
+    bottom: 50px;
+}
+
+/******************************
+*SECTION MOSTUSED
+******************************/
+.mostused {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 0 20px 0 10px;
+    padding: 40px 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px repeat(3, 85px);
+    grid-template-areas:
+        "header"
+        "figcaption"
+        "figcaption"
+        "figcaption";
+}
+
+.fame1 {
+    border-radius: 10px;
+}
+
+.fame2 {
+    border-radius: 10px;
+}
+.fame3 {
+    border-radius: 10px;
+}
+
+.mostused img {
+    padding: 1px 0px 1px 1px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.mostused figcaption {
+    padding: 5px;
+    position: relative;
+    width: 60%;
+}
+.mostused h2 {
+    line-height: 0.1rem;
+}
+.mostused h2 {
+    font-size: 1rem;
+}
+
+.mostused .mstars {
+        position: absolute;
+        bottom: 5px;
+    }
+}
+
+/*header
 header > .nav {
     display: flex;
     justify-content: flex-end;
@@ -22,11 +225,8 @@ header > .nav .register {
     width: 8%;
 }
 
-/*focus*/
+/*focus
 
-h2 {
-    display: inline;
-}
 
 .focusform input {
     width: calc(100% - 550px);
@@ -48,51 +248,7 @@ h2 {
 
 /*accomodation*/
 
-.horizon {
-    display: flex;
-}
-
-.accomodation {
-    margin: 0px 20px 0px 20px;
-    width: 66%;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(2, 150px);
-    grid-template-areas:
-        "h2"
-        "figcaption2 figcaption3 figcaption4"
-        "figcaption5 figcaption6 figcaption7";
-}
-
-.accomodation img {
-    height: calc(100% - 70px);
-    object-fit: cover;
-    padding: 3px 3px 0px 3px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.accomodation figure {
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 20px;
-    height: 100%;
-    width: 140px;
-    box-shadow: 0px 5px 15px silver;
-    margin-right: 20px;
-}
-
-.accomodation figcaption {
-    padding: 10px 15px;
-    position: relative;
-    height: 100px;
-}
-
-.accomodation .stars {
-    position: absolute;
-    bottom: 25px;
-}
+/*mostused
 
 .mostused {
     width: 33%;
@@ -123,7 +279,7 @@ h2 {
     padding-right: 20px;
 }
 
-/*aside*/
+
 
 aside {
     background-color: #fcfcfcf8;
@@ -228,7 +384,7 @@ aside {
     padding: 10px;
 }
 
-/*footer*/
+/*footer
 
 footer {
     background-color: #f2f2f2;
@@ -266,4 +422,67 @@ footer {
 .assi {
     grid-area: nav3;
     height: 20px;
+}
+*/
+nav {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+h2,
+h3 {
+    font-size: 1.1rem;
+    color: black;
+}
+.mostused p {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.accomodation p {
+    font-size: 0.8rem;
+    color: black;
+}
+
+footer nav {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.focusform header p {
+    font-size: 0.9rem;
+}
+
+.focusform {
+    font-size: 0.9rem;
+}
+
+.focusform p > i {
+    font-size: 0.6rem;
+}
+
+label,
+input,
+button {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.mostused header i {
+    font-size: 1.4rem;
+}
+.mostused figure i {
+    font-size: 0.8rem;
+}
+
+.accomodation i {
+    font-size: 0.8rem;
+}
+
+.accomodation .cardg {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
 }

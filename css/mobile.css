@@ -12,69 +12,71 @@
 }
 
 nav {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 h1 {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 h2,
 h3 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     color: black;
 }
 .mostused p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
 }
 
 .accomodation p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: black;
 }
 
 footer nav {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
 }
 
 .focusform header p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .focusform {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .focusform p > i {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 label,
 input,
 button {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
 .mostused header i {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 }
 .mostused figure i {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .accomodation i {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .accomodation .cardg {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: black;
 }
 
-/*Taille interligne*/
+/******************************
+*TAILLE INTERLIGNE
+******************************/
 .mostused h2 {
     line-height: 2rem;
 }
@@ -87,7 +89,9 @@ form > p {
     line-height: 1.5rem;
 }
 
-/*Placement des blocs header*/
+/******************************
+*PLACEMENT DES BLOCS HEADER
+******************************/
 
 header > a {
     position: absolute;
@@ -97,7 +101,7 @@ header > a {
 
 header > nav {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 60px 60px;
     grid-template-areas:
         "register register"
@@ -133,7 +137,9 @@ header > nav .register {
     color: #0065fc;
 }
 
-/* Placement des blocs main*/
+/******************************
+*PLACEMENT DES BLOCS MAIN
+******************************/
 
 .searchbarre {
     display: flex;
@@ -149,7 +155,9 @@ header > nav .register {
         "aside";
 }
 
-/*section focusform*/
+/******************************
+*SECTION FOCUSFORM
+******************************/
 
 .focusform {
     grid-area: focus;
@@ -185,10 +193,6 @@ header > nav .register {
     width: calc(100% - 70px);
     border: 2px solid #f2f2f2;
     padding: 0 10px;
-}
-
-.horizon {
-    display: ;
 }
 
 .focusform label {
@@ -252,18 +256,14 @@ header > nav .register {
     padding-left: 10px;
 }
 
-/*section accomodation */
+/******************************
+*SECTION ACCOMODATION
+******************************/
 
 .accomodation {
     grid-area: accomodation;
 }
 
-/*section activité*/
-.activity {
-    grid-area: aside;
-}
-
-/*grid section */
 .accomodation {
     background-color: #fcfcfcf8;
     padding: 40px 20px;
@@ -304,8 +304,7 @@ header > nav .register {
     height: calc(100% - 100px);
     object-fit: cover;
     padding: 3px 3px 0px 3px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .accomodation figure {
@@ -327,7 +326,9 @@ header > nav .register {
     bottom: 10px;
 }
 
-/*section mostused*/
+/******************************
+*SECTION MOSTUSED
+******************************/
 
 .mostused figure {
     display: flex;
@@ -402,7 +403,14 @@ header > nav .register {
     border-radius: 20px 0px 0px 20px;
 }
 
-/*activity*/
+/******************************
+*SECTION ACTIVITY
+******************************/
+
+.activity {
+    grid-area: aside;
+}
+
 aside {
     background-color: #fcfcfcf8;
     padding: 40px 20px;
@@ -453,6 +461,7 @@ aside {
     border-top-left-radius: 20px;
     height: calc(100% - 70px);
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .activity figure {
@@ -466,7 +475,9 @@ aside {
     padding: 20px;
 }
 
-/* footer */
+/******************************
+*SECTION FOOTER
+******************************/
 
 footer {
     background-color: #f2f2f2;
@@ -512,16 +523,10 @@ footer li a {
     color: black;
 }
 
-/*hover part*/
+/******************************
+*SECTION :HOVER
+******************************/
 
-:hover .btn-filter {
+.btn-filter:hover {
     background-color: #deebff;
 }
-
-/*
-@media screen and (min-width: 993px) {
-}
-
-@media screen and (min-width: 1199px) {
-}
-*/ ;
