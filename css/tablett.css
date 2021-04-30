@@ -65,8 +65,16 @@ header > nav .register {
 .barre i {
     display: none;
 }
+
+.focusform label {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+}
+
 .barre {
-    width: 110px;
+    width: 60px;
+    height: 25px;
     border-radius: 0px 10px 10px 0px;
 }
 .search {
@@ -196,98 +204,25 @@ h2 {
 }
 
 .mostused .mstars {
-        position: absolute;
-        bottom: 5px;
-    }
+    position: absolute;
+    bottom: 5px;
 }
 
-/*header
-header > .nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-header > .nav .acco {
-    border-bottom: none;
-    display: flex;
-    width: 12%;
-}
-
-header > .nav .activities {
-    border-bottom: none;
-    display: flex;
-    grid-area: none;
-    width: 8%;
-}
-header > .nav .register {
-    display: flex;
-    grid-area: none;
-    width: 8%;
-}
-
-/*focus
-
-
-.focusform input {
-    width: calc(100% - 550px);
-}
-
-.barre i {
-    display: none;
-}
-
-.barre {
-    width: 90px;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.search {
-    display: block;
-    color: white;
-}
-
-/*accomodation*/
-
-/*mostused
-
-.mostused {
-    width: 33%;
-    border-radius: 20px;
-}
-
-:root {
-    font-size: 7px;
-}
-
-.mostused .fame1 {
-    height: 100%;
-}
-
-.mostused {
-    background-color: #f2f2f2;
-    padding: 40px 20px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(2, 140px);
-    grid-template-areas:
-        "header"
-        "figcaption";
-}
-
-.horizon {
-    padding-right: 20px;
-}
-
-
+/******************************
+*SECTION ACTIVITY
+******************************/
 
 aside {
     background-color: #fcfcfcf8;
     padding: 40px 20px;
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 330px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px repeat(2, 200px);
+    grid-template-areas:
+        "h1 h1 h1 h1"
+        "figcaption1 figcaption2 figcaption4 figcaption5"
+        "figcaption1 figcaption3 figcaption4 figcaption6";
 }
 
 .card0 {
@@ -325,21 +260,8 @@ aside {
     grid-area: figcaption6;
 }
 
-.act768 {
-    display: flex;
-}
-.act769 {
-    display: flex;
-    flex-direction: column;
-}
-
-.act770 {
-    display: flex;
-    flex-direction: column;
-}
-
 .isle img {
-    height: 110px;
+    height: 150px;
 }
 
 .isle figcaption {
@@ -347,14 +269,14 @@ aside {
 }
 
 .pomegues img {
-    height: 110px;
+    height: 140px;
 }
 .pomegues figcaption {
     height: 40px;
 }
 
 .port img {
-    height: 280px;
+    height: 360px;
 }
 
 .port figcaption {
@@ -362,10 +284,10 @@ aside {
 }
 
 .park img {
-    height: 280px;
+    height: 340px;
 }
 .garde img {
-    height: 70px;
+    height: 140px;
 }
 
 .garde figcaption {
@@ -373,7 +295,7 @@ aside {
 }
 
 .longchamp img {
-    height: 130px;
+    height: 145px;
 }
 
 .longchamp figcaption {
@@ -384,14 +306,14 @@ aside {
     padding: 10px;
 }
 
-/*footer
+/******************************
+*SECTION FOOTER
+******************************/
 
 footer {
-    background-color: #f2f2f2;
-    padding: 40px 20px;
-    display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr;
+    grid-gap: 0px;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
         "h31 h32 h33"
         "nav1 nav2 nav3";
@@ -423,7 +345,11 @@ footer {
     grid-area: nav3;
     height: 20px;
 }
-*/
+
+/******************************
+*SECTION TAILLE DE POLICE
+******************************/
+
 nav {
     font-size: 1rem;
 }
