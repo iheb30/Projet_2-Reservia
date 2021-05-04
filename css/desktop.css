@@ -1,5 +1,5 @@
 :root {
-    font-size: 13px;
+    font-size: 16px;
 }
 /******************************
 *SECTION NAV
@@ -26,6 +26,12 @@ header > nav .register {
     padding: 7px 0 0 0;
 }
 
+.focusform p i {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+}
+
 /******************************
 *SECTION MAIN
 ******************************/
@@ -35,8 +41,7 @@ header > nav .register {
     grid-template-rows: 0.1fr 0.1fr 0.9fr;
     grid-template-areas:
         "focus focus"
-        "mostuses mostuses"
-        "accomodation accomodation"
+        "accomodation mostuses"
         "aside aside";
 }
 .activity {
@@ -57,42 +62,27 @@ header > nav .register {
 *SECTION FOCUSFORM
 ******************************/
 
-.focusform header p {
-    margin-top: 0px;
-}
-
 .focusform input {
-    max-width: 150px;
+    width: 50%;
 }
-
 .barre i {
     display: none;
 }
 
 .focusform label {
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
 }
 
 .barre {
-    width: 80px;
-    height: 45px;
+    width: 60px;
+    height: 25px;
     border-radius: 0px 10px 10px 0px;
 }
 .search {
     display: block;
     color: white;
-}
-
-.focusform p i {
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-}
-
-.focusform p {
-    margin: 20px 0px 10px 0px;
 }
 
 h2 {
@@ -104,9 +94,10 @@ h2 {
 ******************************/
 .accomodation {
     background-color: #f2f2f2;
+    margin: 0 10px 0 20px;
     border-radius: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px repeat(3, 170px) 20px;
+    grid-template-rows: 20px repeat(3, 120px) 20px;
     grid-template-areas:
         "h2 h2"
         "figcaption2 figcaption3"
@@ -121,59 +112,55 @@ h2 {
 }
 
 .accomodation img {
-    height: calc(100% - 68px);
+    height: calc(100% - 60px);
     object-fit: cover;
-    padding: 3px 3px 0px 3px;
+    padding: 1px 1px 0px 1px;
     border-radius: 10px 10px 0px 0px;
 }
 
 .accomodation figcaption {
-    padding: 9px;
+    padding: 5px;
     position: relative;
     height: 100px;
-    line-height: 1.3rem;
+    line-height: 1rem;
 }
 
 .accomodation .stars {
     position: absolute;
-    bottom: 38px;
+    bottom: 50px;
 }
 
 /******************************
 *SECTION MOSTUSED
 ******************************/
-
 .mostused {
     background-color: #f2f2f2;
     border-radius: 10px;
     padding: 40px 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px 85px 85px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px repeat(3, 85px);
     grid-template-areas:
-        "header header"
-        "a1 a3"
-        "a2 a3";
+        "header"
+        "figcaption"
+        "figcaption"
+        "figcaption";
 }
 
-header {
-    grid-area: header;
-}
-.mostused > a .fame1 {
-    grid-area: a1;
+.fame1 {
     border-radius: 10px;
 }
-.mostused > a .fame2 {
-    grid-area: a2;
+
+.fame2 {
     border-radius: 10px;
 }
-.mostused > a .fame3 {
-    grid-area: a3;
+.fame3 {
     border-radius: 10px;
 }
 
 .mostused img {
-    padding: 3px 0px 3px 3px;
+    padding: 1px 0px 1px 1px;
     border-radius: 10px 0px 0px 10px;
 }
 
@@ -202,15 +189,13 @@ aside {
     background-color: #fcfcfcf8;
     padding: 40px 20px;
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30px 250px 140px 140px 255px;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px repeat(2, 200px);
     grid-template-areas:
-        "h1 h1"
-        "figcaption1 figcaption2"
-        "figcaption1 figcaption3"
-        "figcaption4 figcaption5"
-        "figcaption4 figcaption6";
+        "h1 h1 h1 h1"
+        "figcaption1 figcaption2 figcaption4 figcaption5"
+        "figcaption1 figcaption3 figcaption4 figcaption6";
 }
 
 .card0 {
@@ -230,7 +215,7 @@ aside {
 }
 
 .park {
-    padding: 0px 10px 0px 0px;
+    padding: 0px 10px 0px 10px;
 }
 
 .garde {
@@ -242,22 +227,22 @@ aside {
 }
 
 .isle img {
-    height: 90px;
+    height: 150px;
 }
 
 .isle figcaption {
-    height: 40px;
+    height: 50px;
 }
 
 .pomegues img {
-    height: 200px;
+    height: 140px;
 }
 .pomegues figcaption {
     height: 40px;
 }
 
 .port img {
-    height: 370px;
+    height: 360px;
 }
 
 .port figcaption {
@@ -265,18 +250,18 @@ aside {
 }
 
 .park img {
-    height: 360px;
+    height: 340px;
 }
 .garde img {
-    height: 90px;
+    height: 140px;
 }
 
 .garde figcaption {
-    height: 40px;
+    height: 60px;
 }
 
 .longchamp img {
-    height: 200px;
+    height: 145px;
 }
 
 .longchamp figcaption {
@@ -334,7 +319,7 @@ h3 {
 }
 
 .accomodation p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: black;
 }
 

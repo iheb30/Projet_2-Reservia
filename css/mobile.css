@@ -220,6 +220,7 @@ header > nav .register {
     border-radius: 20px;
     background: white;
     height: 40px;
+    font-weight: 800;
 }
 
 .btn-filter i {
@@ -233,7 +234,7 @@ header > nav .register {
 }
 
 .btn-filter span {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .focusform p i {
@@ -312,7 +313,7 @@ header > nav .register {
     background-color: white;
     border-radius: 20px;
     height: 100%;
-    box-shadow: 0px 5px 15px silver;
+    box-shadow: 0px 5px 5px silver;
 }
 
 .accomodation figcaption {
@@ -382,7 +383,7 @@ header > nav .register {
 
 .mostused figure {
     background-color: white;
-    box-shadow: 0px 5px 15px silver;
+    box-shadow: 0px 5px 5px silver;
 }
 
 .mostused figcaption {
@@ -468,7 +469,7 @@ aside {
     border-radius: 20px;
     height: 100%;
     background-color: white;
-    box-shadow: 0px 5px 15px silver;
+    box-shadow: 0px 5px 5px silver;
 }
 
 .activity figcaption {
