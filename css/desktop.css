@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+    font-size: 13px;
 }
 /******************************
 *SECTION NAV
@@ -70,14 +70,14 @@ header > nav .register {
 }
 
 .focusform label {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .barre {
-    width: 60px;
-    height: 25px;
+    width: 100px;
+    height: 40px;
     border-radius: 0px 10px 10px 0px;
 }
 .search {
@@ -127,13 +127,114 @@ h2 {
 
 .accomodation .stars {
     position: absolute;
-    bottom: 50px;
+    bottom: 43px;
 }
 
 /******************************
 *SECTION MOSTUSED
 ******************************/
+
+.mostused figure {
+    display: flex;
+}
+
 .mostused {
+    grid-area: mostuses;
+}
+
+.mostused header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mostused {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 140px);
+    grid-template-areas:
+        "header"
+        "figcaption1"
+        "figcaption2"
+        "figcaption3";
+}
+
+.header {
+    grid-area: header;
+}
+.fame1 {
+    grid-area: figcaption1;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.fame2 {
+    grid-area: figcaption2;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.fame3 {
+    grid-area: figcaption3;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.mostused figure {
+    background-color: white;
+    box-shadow: 0px 5px 5px silver;
+    border-radius: 20px;
+    height: 140px;
+}
+
+.mostused figcaption {
+    padding: 15px;
+    position: relative;
+    width: 60%;
+}
+
+.mostused img {
+    height: 140px;
+    width: 40%;
+    object-fit: cover;
+    padding: 3px 0px 3px 3px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+/*mostused dernière carte*/
+
+.mostused .fame3 figure {
+    background-color: white;
+    box-shadow: 0px 5px 5px silver;
+    border-radius: 20px;
+    height: 140px;
+    display: flex;
+}
+
+.mostused .fame3 figcaption {
+    padding: 15px;
+    position: relative;
+    width: 60%;
+}
+
+.mostused .fame3 img {
+    height: 140px;
+    width: 40%;
+    object-fit: cover;
+    padding: 3px 0px 3px 3px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.mostused .fame3 .mstars {
+    position: absolute;
+    top: 110px;
+}
+
+/*.mostused {
     background-color: #f2f2f2;
     border-radius: 10px;
     padding: 40px 20px;
@@ -180,7 +281,7 @@ h2 {
     position: absolute;
     bottom: 5px;
 }
-
+*/
 /******************************
 *SECTION ACTIVITY
 ******************************/
@@ -362,4 +463,10 @@ button {
     font-size: 1.1rem;
     font-weight: bold;
     color: black;
+}
+
+/*line height*/
+
+.accomodation figcaption {
+    line-height: 1.3rem;
 }

@@ -147,29 +147,30 @@ h2 {
     background-color: #f2f2f2;
     border-radius: 10px;
     padding: 40px 20px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px 85px 85px;
+    grid-template-rows: auto repeat(2, 140px);
     grid-template-areas:
         "header header"
-        "a1 a3"
-        "a2 a3";
+        "figcaption1 figcaption3"
+        "figcaption2 figcaption3";
 }
 
 header {
     grid-area: header;
 }
-.mostused > a .fame1 {
-    grid-area: a1;
+.fame1 {
     border-radius: 10px;
 }
-.mostused > a .fame2 {
-    grid-area: a2;
+.fame2 {
     border-radius: 10px;
 }
-.mostused > a .fame3 {
-    grid-area: a3;
+.fame3 {
     border-radius: 10px;
+}
+
+.mostused figure {
+    border-radius: 10px;
+    height: ;
 }
 
 .mostused img {
@@ -178,7 +179,7 @@ header {
 }
 
 .mostused figcaption {
-    padding: 5px;
+    padding: 15px 10px 10px 15px;
     position: relative;
     width: 60%;
 }
@@ -191,7 +192,32 @@ header {
 
 .mostused .mstars {
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
+}
+/*petite modification en rapport à l'ancienne carte fame3 */
+.mostused .fame3 figure {
+    height: 300px;
+    display: block;
+}
+
+.mostused .fame3 img {
+    height: 140px;
+    width: 100%;
+    padding-right: 3px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.mostused .fame3 p {
+    line-height: 2rem;
+}
+
+.mostused .fame3 figcaption {
+    width: 100%;
+}
+
+.mostused .fame3 .mstars {
+    bottom: 0px;
+    top: 130px;
 }
 
 /******************************
@@ -329,7 +355,7 @@ h3 {
     color: black;
 }
 .mostused p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: black;
 }
 
