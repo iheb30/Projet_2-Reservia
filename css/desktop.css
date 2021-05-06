@@ -97,7 +97,7 @@ h2 {
     margin: 0 10px 0 20px;
     border-radius: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px repeat(3, 120px) 20px;
+    grid-template-rows: 20px repeat(3, 200px) 20px;
     grid-template-areas:
         "h2 h2"
         "figcaption2 figcaption3"
@@ -112,22 +112,22 @@ h2 {
 }
 
 .accomodation img {
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
     object-fit: cover;
-    padding: 1px 1px 0px 1px;
     border-radius: 10px 10px 0px 0px;
 }
 
 .accomodation figcaption {
     padding: 5px;
     position: relative;
-    height: 100px;
-    line-height: 1rem;
+    height: 80px;
 }
-
+.accomodation figcaption p {
+    line-height: 3rem;
+}
 .accomodation .stars {
     position: absolute;
-    bottom: 43px;
+    bottom: 5px;
 }
 
 /******************************
@@ -153,7 +153,7 @@ h2 {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(3, 140px);
+    grid-template-rows: 20px repeat(3, 140px);
     grid-template-areas:
         "header"
         "figcaption1"
@@ -192,16 +192,19 @@ h2 {
 }
 
 .mostused figcaption {
-    padding: 15px;
+    padding: 0 15px;
     position: relative;
     width: 60%;
+    height: 140px;
+}
+
+.mostused figcaption p {
+    line-height: 3rem;
 }
 
 .mostused img {
-    height: 140px;
     width: 40%;
     object-fit: cover;
-    padding: 3px 0px 3px 3px;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -216,13 +219,17 @@ h2 {
 }
 
 .mostused .fame3 figcaption {
-    padding: 15px;
+    padding: 0 15px;
     position: relative;
     width: 60%;
+    height: 140px;
+}
+.mostused .fame3 figcaption p {
+    line-height: 3rem;
 }
 
 .mostused .fame3 img {
-    height: 140px;
+    height: 100%;
     width: 40%;
     object-fit: cover;
     padding: 3px 0px 3px 3px;
@@ -292,7 +299,7 @@ aside {
     display: grid;
     grid-gap: 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30px repeat(2, 200px);
+    grid-template-rows: 40px repeat(2, 200px);
     grid-template-areas:
         "h1 h1 h1 h1"
         "figcaption1 figcaption2 figcaption4 figcaption5"
@@ -327,6 +334,7 @@ aside {
     padding: 10px 0px 0px 10px;
 }
 
+/*
 .isle img {
     height: 150px;
 }
@@ -372,7 +380,7 @@ aside {
 .activity figcaption {
     padding: 10px;
 }
-
+*/
 /******************************
 *SECTION FOOTER
 ******************************/
@@ -403,10 +411,10 @@ footer {
 ******************************/
 
 nav {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 h2,
@@ -414,6 +422,7 @@ h3 {
     font-size: 1.1rem;
     color: black;
 }
+
 .mostused p {
     font-size: 0.8rem;
     color: black;
@@ -430,39 +439,43 @@ footer nav {
 }
 
 .focusform header p {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .focusform {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .focusform p > i {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 label,
 input,
 button {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .mostused header i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .mostused figure i {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .accomodation i {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .accomodation .cardg {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: black;
+}
+
+.activity h2 {
+    font-size: 0.75rem;
 }
 
 /*line height*/

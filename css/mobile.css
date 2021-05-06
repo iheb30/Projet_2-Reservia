@@ -12,42 +12,42 @@
 }
 
 nav {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 h1 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 h2,
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: black;
 }
 .mostused p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: black;
 }
 
 .accomodation p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: black;
 }
 
 footer nav {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: black;
 }
 
 .focusform header p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .focusform {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .focusform p > i {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 label,
@@ -58,18 +58,18 @@ button {
 }
 
 .mostused header i {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
 .mostused figure i {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 
 .accomodation i {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 
 .accomodation .cardg {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: black;
 }
@@ -271,7 +271,7 @@ header > nav .register {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(6, 240px);
+    grid-template-rows: auto repeat(6, 220px);
     grid-template-areas: "h2" "figcaption2" "figcaption3" "figcaption4" "figcaption5" "figcaption6" "figcaption7";
 }
 
@@ -302,9 +302,8 @@ header > nav .register {
 }
 
 .accomodation img {
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     object-fit: cover;
-    padding: 3px 3px 0px 3px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -314,17 +313,19 @@ header > nav .register {
     border-radius: 20px;
     height: 100%;
     box-shadow: 0px 5px 5px silver;
+    padding: 3px 3px 0px 3px;
 }
 
 .accomodation figcaption {
-    padding: 10px 15px;
+    padding: 0 15px;
     position: relative;
-    height: 100px;
+    height: 80px;
+    line-height: 27px;
 }
 
 .accomodation .stars {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
 }
 
 /******************************
@@ -385,7 +386,8 @@ header > nav .register {
     background-color: white;
     box-shadow: 0px 5px 5px silver;
     border-radius: 20px;
-    height: 140px;
+    height: 100%;
+    padding: 3px;
 }
 
 .mostused figcaption {
@@ -400,10 +402,9 @@ header > nav .register {
 }
 
 .mostused img {
-    height: 140px;
+    height: 100%;
     width: 40%;
     object-fit: cover;
-    padding: 3px 0px 3px 3px;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -461,9 +462,7 @@ aside {
 }
 
 .activity img {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    height: calc(100% - 70px);
+    height: calc(100% - 50px);
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
@@ -476,7 +475,9 @@ aside {
 }
 
 .activity figcaption {
-    padding: 20px;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
 }
 
 /******************************

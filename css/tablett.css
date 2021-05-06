@@ -106,7 +106,7 @@ h2 {
     background-color: #f2f2f2;
     border-radius: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px repeat(3, 170px) 20px;
+    grid-template-rows: 20px repeat(3, 220px) 20px;
     grid-template-areas:
         "h2 h2"
         "figcaption2 figcaption3"
@@ -121,22 +121,21 @@ h2 {
 }
 
 .accomodation img {
-    height: calc(100% - 68px);
+    height: calc(100% - 80px);
     object-fit: cover;
-    padding: 3px 3px 0px 3px;
     border-radius: 10px 10px 0px 0px;
 }
-
+/*
 .accomodation figcaption {
     padding: 9px;
     position: relative;
     height: 100px;
     line-height: 1.3rem;
 }
-
+*/
 .accomodation .stars {
     position: absolute;
-    bottom: 38px;
+    bottom: 0px;
 }
 
 /******************************
@@ -145,7 +144,7 @@ h2 {
 
 .mostused {
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 40px 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(2, 140px);
@@ -170,19 +169,20 @@ header {
 
 .mostused figure {
     border-radius: 10px;
-    height: ;
 }
 
 .mostused img {
-    padding: 3px 0px 3px 3px;
     border-radius: 10px 0px 0px 10px;
 }
 
 .mostused figcaption {
-    padding: 15px 10px 10px 15px;
+    padding: 0px 15px;
     position: relative;
     width: 60%;
+    height: 140px;
+    line-height: 27px;
 }
+
 .mostused h2 {
     line-height: 0.1rem;
 }
@@ -198,12 +198,12 @@ header {
 .mostused .fame3 figure {
     height: 300px;
     display: block;
+    padding-right: 3px;
 }
 
 .mostused .fame3 img {
     height: 140px;
     width: 100%;
-    padding-right: 3px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -266,7 +266,7 @@ aside {
 .longchamp {
     padding: 10px 0px 0px 10px;
 }
-
+/*
 .isle img {
     height: 90px;
 }
@@ -312,6 +312,7 @@ aside {
 .activity figcaption {
     padding: 10px;
 }
+*/
 
 /******************************
 *SECTION FOOTER
@@ -343,64 +344,64 @@ footer {
 ******************************/
 
 nav {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 h2,
 h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: black;
 }
 .mostused p {
-    font-size: 0.85rem;
-    color: black;
-}
-
-.accomodation p {
-    font-size: 0.85rem;
-    color: black;
-}
-
-footer nav {
     font-size: 0.8rem;
     color: black;
 }
 
-.focusform header p {
+.accomodation p {
+    font-size: 0.95rem;
+    color: black;
+}
+
+footer nav {
     font-size: 0.9rem;
+    color: black;
+}
+
+.focusform header p {
+    font-size: 1rem;
 }
 
 .focusform {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .focusform p > i {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 label,
 input,
 button {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .mostused header i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .mostused figure i {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .accomodation i {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .accomodation .cardg {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: black;
 }
