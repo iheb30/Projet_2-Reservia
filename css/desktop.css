@@ -1,72 +1,25 @@
-:root {
-    font-size: 13px;
-}
-/******************************
-*SECTION NAV
-******************************/
-
-header > nav {
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    grid-template-rows: 60px;
-    grid-template-areas: ". accomodations activities register";
-}
-
-header > nav .acco {
-    border-top: 3px solid #0065fc;
-    border-bottom: none;
-}
-
-header > nav .activities {
-    padding-top: 3px;
-    border-bottom: none;
-}
-
-header > nav .register {
-    justify-self: center;
-    padding: 7px 0 0 0;
-}
-
-.focusform p i {
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-}
-
 /******************************
 *SECTION MAIN
 ******************************/
 .main {
-    display: grid;
     grid-template-columns: 4fr 3fr;
-    grid-template-rows: 0.1fr 0.1fr 0.9fr;
+    padding: 20px;
     grid-template-areas:
         "focus focus"
         "accomodation mostuses"
         "aside aside";
-}
-.activity {
-    grid-area: aside;
-}
-.mostused {
-    grid-area: mostuses;
-}
-.accomodation {
-    grid-area: accomodation;
-}
-.focusform {
-    grid-area: focus;
-    padding: 20px;
 }
 
 /******************************
 *SECTION FOCUSFORM
 ******************************/
 
+.focusform {
+    padding: 0px;
+}
+
 .focusform input {
     width: 50%;
-}
-.barre i {
-    display: none;
 }
 
 .focusform label {
@@ -78,309 +31,97 @@ header > nav .register {
 .barre {
     width: 100px;
     height: 40px;
-    border-radius: 0px 10px 10px 0px;
-}
-.search {
-    display: block;
-    color: white;
-}
-
-h2 {
-    display: inline;
 }
 
 /******************************
 *SECTION ACCOMODATION
 ******************************/
 .accomodation {
-    background-color: #f2f2f2;
-    margin: 0 10px 0 20px;
-    border-radius: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px repeat(3, 200px) 20px;
-    grid-template-areas:
-        "h2 h2"
-        "figcaption2 figcaption3"
-        "figcaption4 figcaption5"
-        "figcaption6 figcaption7"
-        "figcaption8 figcaption8";
-}
-
-.accomodation figure {
-    border-radius: 10px;
-    height: 100%;
+    grid-template-rows: 20px repeat(3, 180px) 20px;
 }
 
 .accomodation img {
-    height: calc(100% - 80px);
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
+    height: calc(100% - 70px);
 }
 
 .accomodation figcaption {
-    padding: 5px;
-    position: relative;
-    height: 80px;
-}
-.accomodation figcaption p {
-    line-height: 3rem;
-}
-.accomodation .stars {
-    position: absolute;
-    bottom: 5px;
+    height: 70px;
 }
 
 /******************************
 *SECTION MOSTUSED
 ******************************/
 
-.mostused figure {
-    display: flex;
-}
-
 .mostused {
     grid-area: mostuses;
 }
 
-.mostused header {
-    display: flex;
-    justify-content: space-between;
-}
-
 .mostused {
-    background-color: #f2f2f2;
-    padding: 40px 20px;
-    display: grid;
-    grid-gap: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 20px repeat(3, 140px);
     grid-template-areas:
         "header"
-        "figcaption1"
-        "figcaption2"
-        "figcaption3";
+        "card1"
+        "card2"
+        "card3";
 }
 
 .header {
     grid-area: header;
 }
-.fame1 {
-    grid-area: figcaption1;
-    height: 100%;
-    border: 1px solid white;
+.fame {
     border-radius: 20px;
 }
 
-.fame2 {
-    grid-area: figcaption2;
+.mostused .fame3 figure {
     height: 100%;
-    border: 1px solid white;
-    border-radius: 20px;
-}
-.fame3 {
-    grid-area: figcaption3;
-    height: 100%;
-    border: 1px solid white;
-    border-radius: 20px;
+    flex-direction: row;
 }
 
-.mostused figure {
-    background-color: white;
-    box-shadow: 0px 5px 5px silver;
-    border-radius: 20px;
-    height: 140px;
-}
-
-.mostused figcaption {
-    padding: 0 15px;
-    position: relative;
+.mostused .fame3 figcaption {
+    padding: 10px 15px;
     width: 60%;
-    height: 140px;
-}
-
-.mostused figcaption p {
-    line-height: 3rem;
+    height: 100%;
 }
 
 .mostused img {
-    width: 40%;
-    object-fit: cover;
     border-radius: 20px 0px 0px 20px;
+}
+
+.mostused .mstars {
+    position: absolute;
+    bottom: 10px;
 }
 
 /*mostused dernière carte*/
 
-.mostused .fame3 figure {
-    background-color: white;
-    box-shadow: 0px 5px 5px silver;
-    border-radius: 20px;
-    height: 140px;
-    display: flex;
-}
-
-.mostused .fame3 figcaption {
-    padding: 0 15px;
-    position: relative;
-    width: 60%;
-    height: 140px;
-}
-.mostused .fame3 figcaption p {
-    line-height: 3rem;
-}
-
 .mostused .fame3 img {
     height: 100%;
     width: 40%;
-    object-fit: cover;
-    padding: 3px 0px 3px 3px;
     border-radius: 20px 0px 0px 20px;
 }
 
 .mostused .fame3 .mstars {
     position: absolute;
-    top: 110px;
+    bottom: 10px;
 }
 
-/*.mostused {
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    padding: 40px 20px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20px repeat(3, 85px);
-    grid-template-areas:
-        "header"
-        "figcaption"
-        "figcaption"
-        "figcaption";
-}
-
-.fame1 {
-    border-radius: 10px;
-}
-
-.fame2 {
-    border-radius: 10px;
-}
-.fame3 {
-    border-radius: 10px;
-}
-
-.mostused img {
-    padding: 1px 0px 1px 1px;
-    border-radius: 10px 0px 0px 10px;
-}
-
-.mostused figcaption {
-    padding: 5px;
-    position: relative;
-    width: 60%;
-}
-.mostused h2 {
-    line-height: 0.1rem;
-}
-.mostused h2 {
-    font-size: 1rem;
-}
-
-.mostused .mstars {
-    position: absolute;
-    bottom: 5px;
-}
-*/
 /******************************
 *SECTION ACTIVITY
 ******************************/
 
 aside {
-    background-color: #fcfcfcf8;
-    padding: 40px 20px;
-    display: grid;
-    grid-gap: 0px;
+    background-color: white;
+    padding: 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 40px repeat(2, 200px);
+    grid-template-rows: 20px 150px 100px 150px;
     grid-template-areas:
         "h1 h1 h1 h1"
-        "figcaption1 figcaption2 figcaption4 figcaption5"
-        "figcaption1 figcaption3 figcaption4 figcaption6";
+        "card1 card2 card4 card5"
+        "card1 card2 card4 card6"
+        "card1 card3 card4 card6";
 }
 
-.card0 {
-    margin-bottom: 20px;
-}
-
-.port {
-    padding: 0px 10px 0px 0px;
-}
-
-.pomegues {
-    padding: 0px 10px 10px 10px;
-}
-
-.isle {
-    padding: 10px 10px 0px 10px;
-}
-
-.park {
-    padding: 0px 10px 0px 10px;
-}
-
-.garde {
-    padding: 0px 0px 10px 10px;
-}
-
-.longchamp {
-    padding: 10px 0px 0px 10px;
-}
-
-/*
-.isle img {
-    height: 150px;
-}
-
-.isle figcaption {
-    height: 50px;
-}
-
-.pomegues img {
-    height: 140px;
-}
-.pomegues figcaption {
-    height: 40px;
-}
-
-.port img {
-    height: 360px;
-}
-
-.port figcaption {
-    height: 40px;
-}
-
-.park img {
-    height: 340px;
-}
-.garde img {
-    height: 140px;
-}
-
-.garde figcaption {
-    height: 60px;
-}
-
-.longchamp img {
-    height: 145px;
-}
-
-.longchamp figcaption {
-    height: 50px;
-}
-
-.activity figcaption {
-    padding: 10px;
-}
-*/
 /******************************
 *SECTION FOOTER
 ******************************/
@@ -410,17 +151,17 @@ footer {
 *SECTION TAILLE DE POLICE
 ******************************/
 
+:root {
+    font-size: 14px;
+}
+
 nav {
     font-size: 1.1rem;
 }
-h1 {
-    font-size: 1.4rem;
-    font-weight: bold;
-}
+
 h2,
 h3 {
     font-size: 1.1rem;
-    color: black;
 }
 
 .mostused p {
@@ -438,34 +179,12 @@ footer nav {
     color: black;
 }
 
-.focusform header p {
-    font-size: 1rem;
-}
-
-.focusform {
-    font-size: 1rem;
-}
-
-.focusform p > i {
-    font-size: 0.7rem;
-}
-
-label,
-input,
-button {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.mostused header i {
-    font-size: 1.5rem;
-}
 .mostused figure i {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .accomodation i {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .accomodation .cardg {
@@ -475,11 +194,5 @@ button {
 }
 
 .activity h2 {
-    font-size: 0.75rem;
-}
-
-/*line height*/
-
-.accomodation figcaption {
-    line-height: 1.3rem;
+    font-size: 0.85rem;
 }

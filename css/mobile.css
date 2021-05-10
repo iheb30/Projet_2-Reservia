@@ -50,13 +50,6 @@ footer nav {
     font-size: 1.1rem;
 }
 
-label,
-input,
-button {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
 .mostused header i {
     font-size: 1.9rem;
 }
@@ -81,11 +74,15 @@ button {
     line-height: 2rem;
 }
 
-main h1 {
+.focusform h1 {
     line-height: 2.6rem;
 }
 
 form > p {
+    line-height: 1.5rem;
+}
+
+.mostused h1 {
     line-height: 1.5rem;
 }
 
@@ -148,6 +145,7 @@ header > nav .register {
 
 .main {
     display: grid;
+    grid-gap: 20px;
     grid-template-areas:
         "focus"
         "mostuses"
@@ -217,9 +215,9 @@ header > nav .register {
 .btn-filter {
     margin: 0px 10px 10px 0px;
     border: 2px solid silver;
-    border-radius: 20px;
     background: white;
     height: 40px;
+    border-radius: 20px;
     font-weight: 800;
 }
 
@@ -255,6 +253,8 @@ header > nav .register {
 .focusform p span {
     width: calc(100% - 30px);
     padding-left: 10px;
+    position: relative;
+    top: 8px;
 }
 
 /******************************
@@ -266,13 +266,13 @@ header > nav .register {
 }
 
 .accomodation {
-    background-color: #fcfcfcf8;
+    background-color: white;
     padding: 40px 20px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(6, 220px);
-    grid-template-areas: "h2" "figcaption2" "figcaption3" "figcaption4" "figcaption5" "figcaption6" "figcaption7";
+    grid-template-areas: "h2" "card2" "card3" "card4" "card5" "card6" "card7";
 }
 
 .cardz {
@@ -280,25 +280,25 @@ header > nav .register {
 }
 
 .carda {
-    grid-area: figcaption2;
+    grid-area: card2;
 }
 .cardb {
-    grid-area: figcaption3;
+    grid-area: card3;
 }
 .cardc {
-    grid-area: figcaption4;
+    grid-area: card4;
 }
 
 .cardd {
-    grid-area: figcaption5;
+    grid-area: card5;
 }
 
 .carde {
-    grid-area: figcaption6;
+    grid-area: card6;
 }
 
 .cardf {
-    grid-area: figcaption7;
+    grid-area: card7;
 }
 
 .accomodation img {
@@ -323,17 +323,17 @@ header > nav .register {
     line-height: 27px;
 }
 
-.accomodation .stars {
-    position: absolute;
-    bottom: 0px;
-}
-
 /******************************
 *SECTION MOSTUSED
 ******************************/
 
 .mostused figure {
     display: flex;
+    background-color: white;
+    box-shadow: 0px 5px 5px silver;
+    border-radius: 20px;
+    height: 100%;
+    padding: 3px;
 }
 
 .mostused {
@@ -354,40 +354,30 @@ header > nav .register {
     grid-template-rows: auto repeat(3, 140px);
     grid-template-areas:
         "header"
-        "figcaption1"
-        "figcaption2"
-        "figcaption3";
+        "card1"
+        "card2"
+        "card3";
 }
 
 .header {
     grid-area: header;
 }
-.fame1 {
-    grid-area: figcaption1;
+
+.fame {
     height: 100%;
     border: 1px solid white;
     border-radius: 20px;
+}
+
+.fame1 {
+    grid-area: card1;
 }
 
 .fame2 {
-    grid-area: figcaption2;
-    height: 100%;
-    border: 1px solid white;
-    border-radius: 20px;
+    grid-area: card2;
 }
 .fame3 {
-    grid-area: figcaption3;
-    height: 100%;
-    border: 1px solid white;
-    border-radius: 20px;
-}
-
-.mostused figure {
-    background-color: white;
-    box-shadow: 0px 5px 5px silver;
-    border-radius: 20px;
-    height: 100%;
-    padding: 3px;
+    grid-area: card3;
 }
 
 .mostused figcaption {
@@ -417,20 +407,20 @@ header > nav .register {
 }
 
 aside {
-    background-color: #fcfcfcf8;
+    background-color: white;
     padding: 40px 20px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(6, 230px);
+    grid-template-rows: 20px repeat(6, 230px);
     grid-template-areas:
         "h1"
-        "figcaption1"
-        "figcaption2"
-        "figcaption3"
-        "figcaption4"
-        "figcaption5"
-        "figcaption6";
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6";
 }
 
 .card0 {
@@ -438,27 +428,27 @@ aside {
 }
 
 .port {
-    grid-area: figcaption1;
+    grid-area: card1;
 }
 
 .pomegues {
-    grid-area: figcaption2;
+    grid-area: card2;
 }
 
 .isle {
-    grid-area: figcaption3;
+    grid-area: card3;
 }
 
 .park {
-    grid-area: figcaption4;
+    grid-area: card4;
 }
 
 .garde {
-    grid-area: figcaption5;
+    grid-area: card5;
 }
 
 .longchamp {
-    grid-area: figcaption6;
+    grid-area: card6;
 }
 
 .activity img {

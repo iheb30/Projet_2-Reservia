@@ -1,0 +1,13 @@
+.accomodation {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20px repeat(2, 180px) 20px;
+    grid-template-areas:
+        "h2 h2 h2"
+        "card2 card3 card4"
+        "card5 card6 card7"
+        "card8 card8 card8";
+}
+
+.activity h2 {
+    font-size: 1rem;
+}
